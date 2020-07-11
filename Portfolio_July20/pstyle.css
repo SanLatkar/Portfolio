@@ -1,0 +1,214 @@
+/*Core styling (Mobile Mode)*/
+body
+{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: rgb(246, 238, 238);
+    color:rgb(0, 0, 0);
+    font-size: 1.1em;
+    line-height:1.5;
+    text-align:center;
+}
+
+#pagetop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgb(167, 114, 72);
+    color:#fff;
+    text-decoration: none;
+    padding: 10px;
+    border:1px solid #666;
+    margin: 10px 20px;
+    opacity: 0.5;
+}
+
+h2
+{
+    color: #000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 200;
+    margin: 15px 0px;
+}
+
+
+/* Styling Navigation bar in it */
+#nav
+{
+    position: relative;
+    background: #dbd8d8;
+    width: 93%;
+    height: 100%;
+    margin: 0px 20px;
+}
+#nav img
+{
+    width: 200px;
+    height: 220px;
+    margin: 2px;
+    padding: 2px;
+    border: black;
+}
+#nav a
+{
+    display :inline-block;
+    background:#dbd8d8;
+    color:#000000;
+    text-decoration: none;
+    border:none;
+    margin: 0.5em 1em;
+    opacity: 0.8;
+
+}
+#nav a:hover
+{
+    background : #0F0F0E;
+    color: white;
+}
+
+/* Styking About Section*/
+#about
+{
+    
+    padding: 30px;
+}
+
+/* Styling Resume */
+.resume{
+    padding: 2em;
+    margin: 10px 20px;
+    background: #d1cdc6;
+}
+.resume h2 {
+    line-height: 1.5;
+}
+.resume a
+{
+    display :inline-block;
+    color:#000000;
+    text-decoration: none;
+    border:none;
+    margin: 0.5em 0;
+    opacity: 1;
+}
+.resume a:hover
+{
+    background : #0f0f0f;
+    color: #d1cdc6;
+}
+
+/* Styking Skiils Section*/
+#skills
+{
+    padding: 30px;
+}
+#skills p
+{
+    text-align: left;
+}
+
+/* Styking Education Section*/
+#education
+{
+    padding: 30px;
+    margin: 10px 20px;
+    background: #d1cdc6;
+}
+#education a
+{
+    display :inline-block;
+    color:#000000;
+    text-decoration: none;
+    border:none;
+}
+#education summary
+{
+    display: inline-block;
+}
+
+/* Styking Project Section*/
+#project
+{
+    padding: 30px;
+}
+
+/* Styking Additionl achievement and hobbies Section*/
+#additional
+{
+    padding: 30px;
+    margin: 10px 20px;
+    background: #d1cdc6;
+}
+#additonal_details
+{
+    text-align: left;
+}
+#hobbies
+{
+    font-size: 15px;
+}
+
+/* Styking Additionl achievement and hobbies Section*/
+#contact
+{
+    padding: 2em;
+    margin: 10px 20px;
+    background: #dbd8d8;
+}
+/* Styking Contact Section*/
+#contact img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: black;
+}
+
+
+/* Tablet Mode*/
+@media(min-width:768px)
+{
+    #nav
+    {
+        position: fixed;
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+    #nav img
+    {
+        width: 160px;
+    }
+    #nav h5
+    {
+        margin: 0px 5px;
+    }
+    #main
+    {
+        float: right;
+        margin-left: 30%;
+    }
+    #pagetop
+    {
+        pointer-events: none;
+        opacity: 0;
+    }
+}
+
+/*Desktop Mode*/
+@media(min-width:1000px)
+{
+    #nav
+    {
+        width: 30%;
+        height: 100%;
+        margin: 0px 60px;
+        
+    }
+    #main
+    {
+        margin-left: 40%;
+    }
+}
